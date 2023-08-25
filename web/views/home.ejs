@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Training Home</title>
+		<link rel="stylesheet" type="text/css" href="web/styles/basic.css" />
+	</head>
+	<body>
+		<div id="header">
+			<h1>Login Page</h1>
+			<%- include("partials/navbar.ejs"); %> <!-- dynamic nav bar -->
+		</div>
+		<div id="content">
+			<p>This is a static p tag</p>
+			
+			<p>Also static (for now). will display if GET or POST request dynamically</p>
+			
+			<p><%= "This is dynamic inner HTML." %></p>
+			<%- "<h2>This is a dynamic tag</h2>" %>
+		</div>
+		<div id="footer"><h3>End Training</h3></div>
+	</body>
+</html>
