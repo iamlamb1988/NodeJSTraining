@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Training Home</title>
+		<title>Login</title>
 		<link rel="stylesheet" type="text/css" href="web/styles/basic.css" />
 	</head>
 	<body>
 		<div id="header">
-			<h1>Login Page</h1>
+			<h1>Home Page</h1>
 			<%- include("partials/navbar.ejs"); %> <!-- dynamic nav bar -->
 		</div>
 		<div id="content">
-			<p>This is a static p tag</p>
-			
-			<p>Also static (for now). will display if GET or POST request dynamically</p>
-			
-			<p><%= "This is dynamic inner HTML." %></p>
-			<%- "<h2>This is a dynamic tag</h2>" %>
+			<form method="post" action="/">
+				<label for="t" >Tag ID: </label><input id="t" type="text" name="tag" />
+				<label for="pw" >Password: </label><input id="pw" type="password" name="pw" />
+				<!-- submit once POST variable accessing is discovered -->
+			</form>
 		</div>
 		<div id="footer"><h3>End Training</h3></div>
 	</body>
