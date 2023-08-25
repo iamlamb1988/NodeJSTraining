@@ -1,14 +1,13 @@
-const http=require("http");
+// Express webserver Listener setup
+const express=require('express');
+const app=express();
+app.listen(3000);
 
-const hostname = '167.71.82.230';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-	res.statusCode = 200;
-	res.setHeader('Content-Type', 'text/html');
-	res.end('<h1>Hello World</h1>');
-});
-
-server.listen(port, hostname, () => {
-	console.log(`Server running at http://${hostname}:${port}/`);
+//"get" represents HTTP GET request
+//
+app.get('/', (req, res) => {
+	// console.log(req); //prints request object from client browser (or other request point). Very big object
+	// console.log(req.socket); //prints many details from socket
+	// console.log(req.socket.localAddress);
+	res.send("<h1>Hello Express</h1><p>IP: "+req.socket.localAddress+"</p>");
 });
