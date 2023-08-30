@@ -1,4 +1,5 @@
 # Node JS
+[Node JS Documentation](https://nodejs.org/en/docs)
 
 ## Using Ubuntu as root user
 
@@ -29,13 +30,61 @@ This will prompt you with a series of questions such as project name and startin
 
 ## Install additional packages
 Packages used in this particular app
-'''
+```
 npm install express
-'''
+```
 
-'''
+```
 npm install ejs
-'''
+```
+
+```
+npm install mariadb
+```
+
+## Install MariaDB on Ubuntu
+```
+sudo apt install mariadb-server
+```
+
+```
+sudo mysql_secure_installation
+```
+
+```
+CREATE DATABASE nodetrain;
+```
+
+Create table "users" on database "nodetrain"
+```
+CREATE TABLE users(
+	id INT NOT NULL AUTO_INCREMENT,
+	tag VARCHAR(255),
+	hash VARCHAR(511),
+
+	PRIMARY KEY(id),
+	UNIQUE(tag)
+);
+```
+
+Create a mysql user, grant all permissions to that user, then flush privileges.
+```
+CREATE USER bot@'%' IDENTIFIED BY 'secretnodejs';
+```
+
+```
+ GRANT ALL PRIVILEGES ON *.* TO 'bot'@'%';
+```
+
+```
+FLUSH PRIVILEGES;
+```
+
+Currently following this guide to establish mariadb connection via nodejs:
+https://mariadb.com/kb/en/getting-started-with-the-nodejs-connector
+
+## Install Redis on Ubuntu
+Comming soon!
 
 ## Issues
 ### 1. Password security

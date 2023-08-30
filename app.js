@@ -1,3 +1,4 @@
+[Project Repository](https://github.com/iamlamb1988/NodeJSTraining/tree/checkpoint)
 // Express webserver Listener setup (bare minimum)
 const express=require('express');
 const app=express();
@@ -5,6 +6,7 @@ app.listen(3000);
 
 //additional nodejs modules
 const path=require('path');
+const mariadb=require('mariadb'); //(not yet used) Required to establish ODBC connection
 
 //Globals
 //no globals
