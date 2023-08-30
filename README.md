@@ -6,7 +6,7 @@
 - [ ] Store usernames and hashed passwords into database
 	- [ ] MariaDB (SQL)
 	- [ ] Redis (NoSQL)
-- [ ]
+- [ ] Handle sensitive information via #Issue section below
 
 ## Install
 1. install nodejs
