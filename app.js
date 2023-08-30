@@ -12,6 +12,7 @@ const path=require('path');
 app.set('view engine','ejs'); //this enables scriptlets to execute in the .ejs files
 app.set('views', path.join(__dirname, './web/views')); //will set the render to look for files in this directory
 app.use(express.urlencoded({ extended: false })); //allows access to POST variables
+app.use(express.static(__dirname + '/web')); //"Should" allow direct css access
 
 //"get" represents HTTP GET request
 app.get('/', (req,res) => {
