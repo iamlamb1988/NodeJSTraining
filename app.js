@@ -6,7 +6,7 @@ app.listen(3000);
 
 //additional nodejs modules
 const path=require('path');
-const mariadb=require('mariadb'); //(not yet used) Required to establish ODBC connection
+// const mariadb=require('mariadb'); //(not yet used) Required to establish ODBC connection
 
 //Globals
 //no globals

@@ -1,25 +1,6 @@
 {
   "dependencies": {
-    "crypto": "^1.0.1",
     "ejs": "^3.1.9",
-    "express": "^4.18.2",
-    "mariadb": "^3.2.0"
-  },
-  "name": "nodejstraining",
-  "description": "This is nodejs barebones setup server.",
-  "version": "1.0.0",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamlamb1988/NodeJSTraining.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamlamb1988/NodeJSTraining/issues"
-  },
-  "homepage": "https://github.com/iamlamb1988/NodeJSTraining#readme"
+    "express": "^4.18.2"
+  }
 }

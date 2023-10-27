@@ -42,6 +42,20 @@ npm install ejs
 npm install mariadb
 ```
 
+## Install Docker
+[Doc Install resource](https://docs.docker.com/engine/install/ubuntu/)
+
+Will run on IP:167.71.82.230:3000
+
+Instructions comming soon for running this application
+
+docker build . -t dockertest
+docker run -d -p 3000:3000 dockertest
+
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
 ## Install MariaDB on Ubuntu
 ```
 sudo apt install mariadb-server
